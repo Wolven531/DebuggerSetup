@@ -5,6 +5,20 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"type": "node",
+			"request": "launch",
+			"name": "Launch via NPM",
+			"runtimeExecutable": "npm",
+			"runtimeArgs": [],
+			"port": 5858,
+			"args": [
+				"run",
+				"start"
+			],
+			"console": "externalTerminal",
+			"cwd": "${workspaceFolder}/ClientApp"
+		},
+		{
 			"name": ".NET Core Launch (web)",
 			"type": "coreclr",
 			"request": "launch",
